@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drkanteshkumar.github.io/sitemap.xml
