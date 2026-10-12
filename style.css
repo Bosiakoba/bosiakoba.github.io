@@ -5,7 +5,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.65 -apple-s
 a{color:var(--accent);text-underline-offset:2px}
 a:hover{color:#0f3249}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
 header.site{border-bottom:1px solid var(--rule)}
 header.site .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.25rem 1.5rem;padding-top:1rem;padding-bottom:.75rem}
 .brand{font-family:Georgia,"Times New Roman",serif;font-size:1.2rem;font-weight:700;color:var(--ink);text-decoration:none}
@@ -13,14 +13,14 @@ nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.1rem 
 nav a{display:inline-block;padding:.3rem 0;color:var(--muted);text-decoration:none;font-size:.97rem;border-bottom:2px solid transparent}
 nav a:hover{color:var(--ink)}
 nav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
-main{padding:2rem 0 3rem}
+main{padding:2.2rem 0 3.5rem}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.25;color:var(--ink)}
 h1{font-size:2rem;margin:0 0 .5rem}
 h2{font-size:1.35rem;margin:2.2rem 0 .6rem;padding-bottom:.3rem;border-bottom:1px solid var(--rule)}
 h3{font-size:1.05rem;margin:1.4rem 0 .3rem;color:var(--accent)}
 .lead{color:var(--muted);margin:0 0 1.5rem}
-.profile{display:flex;gap:2rem;align-items:flex-start;margin-bottom:1.5rem}
-.profile img{width:230px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:6px;border:1px solid var(--rule);flex:none}
+.profile{display:grid;grid-template-columns:280px minmax(0,1fr);gap:3rem;align-items:start;margin-bottom:1.5rem}
+.profile img{width:280px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:6px;border:1px solid var(--rule)}
 .profile .tagline{margin:0 0 1rem;color:var(--accent);font-weight:600}
 .profile p{margin:.6rem 0}
 .links{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem .6rem}
@@ -30,19 +30,41 @@ h3{font-size:1.05rem;margin:1.4rem 0 .3rem;color:var(--accent)}
 ul.plain{padding-left:1.2rem;margin:.5rem 0}
 ul.plain li{margin:.25rem 0}
 .count{font-weight:600}
-ol.pubs,ol.pres{list-style:none;margin:0;padding:0}
+p,ul.plain{max-width:68ch}
+ol.pubs,ol.pres{list-style:none;margin:0;padding:0;max-width:74ch}
 ol.pubs li,ol.pres li{margin:0 0 1rem;padding-left:0;overflow-wrap:anywhere}
 ol.pres ul{margin:.2rem 0 0;padding-left:1.2rem;color:var(--muted);font-size:.97rem}
 .status{color:var(--muted);font-size:.95rem}
 .btn{display:inline-block;padding:.6rem 1.2rem;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none;font-weight:600}
 .btn:hover{background:#0f3249;color:#fff}
 footer.site{border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem;padding:1.2rem 0 2rem}
+ul.tiles{list-style:none;margin:.5rem 0 1rem;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;max-width:44rem}
+ul.tiles li{background:var(--tint);border-left:3px solid var(--accent);padding:.6rem 1rem;border-radius:0 4px 4px 0}
+.cards{display:grid;gap:1.25rem;margin:1rem 0}
+.cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{border:1px solid var(--rule);border-top:3px solid var(--accent);border-radius:4px;padding:1.1rem 1.4rem;background:#fff}
+.card h2,.card h3{margin:0 0 .6rem;padding:0;border:0;font-size:1.15rem;color:var(--accent)}
+.card p{margin:0;max-width:none}
+.year{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:0 1.5rem;margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid var(--rule)}
+.year h2{margin:0;padding:0;border:0;font-size:1.3rem}
+.year>.status,.year .status{margin-top:0}
 @media (max-width:640px){
  html{font-size:100%}
  h1{font-size:1.65rem}
- .profile{flex-direction:column;gap:1.2rem}
+ .profile .tagline{font-size:.84rem;white-space:nowrap}
+ .profile{grid-template-columns:1fr;gap:1.2rem}
  .profile img{width:190px}
+ .year{display:block}
+ .cards.two,ul.tiles{grid-template-columns:1fr}
  main{padding-top:1.5rem}
 }
 @media print{header.site nav,footer.site{display:none}}
 ol.pres ul li{margin:.1rem 0}
+.entry{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:0 1.5rem;margin:0 0 1.1rem}
+.entry .when{color:var(--muted);font-size:.95rem}
+.entry p{margin:0}
+.entry .where{color:var(--muted)}
+.entry ul{margin:.35rem 0 0;padding-left:1.2rem;max-width:68ch}
+.entry li{margin:.2rem 0}
+ul.wide{max-width:none}
+@media (max-width:640px){.entry{display:block}.entry .when{margin-bottom:.1rem}}
