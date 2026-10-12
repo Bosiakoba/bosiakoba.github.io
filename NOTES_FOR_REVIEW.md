@@ -6,7 +6,7 @@ Items from the CV that are still unclear or need your confirmation. Nothing here
 2. **AMMSA 2025 podium talk title:** As you asked, the title is the one in the CV ("Insights from Lady Health Workers and Communities on Disaster Response in Shaheed Benazirabad District, Pakistan"). It does not mention CPR or first-aid training, so the page does not describe the talk that way.
 3. **Email address:** The CV shows kantesh.kumar23@alumni.aku.edu. The site uses kanteshkumar@hsph.harvard.edu.
 4. **Profile links:** Google Scholar and ORCID links come from the CV. The CV also lists a ResearchGate profile, which is not linked on the site.
-5. **Unpublished work:** Six manuscripts marked "under review" or "submitted" and one book chapter "in press" are in separate sections and are not in the count of 19. Two of them carry a year in the CV (2025 and 2026) while also saying "under review"; they are shown without year grouping.
+5. **Book chapter:** The in-press book chapter is shown in its own section and is not in the count of 19.
 6. **Presentation years:** Where a citation year and the meeting year differ, presentations are grouped by meeting year ("Long-term Mortality after Older Adults' Trauma in Low-Middle Income Countries" is under 2025). "From Obstetrics to CPR" (cited 2024) is under 2024 even though one venue listed is the International Conference on Emergency Medicine 2025.
 7. **PubMed and PMC links:** For the two *JAMA Network Open* papers, links were built from the PMID and PMCID printed in the CV.
 8. **MPH concentration:** "Quantitative Methods" comes from your message; the CV says only "Master of Public Health".
