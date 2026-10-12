@@ -1,59 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kantesh Kumar, MBBS | Physician-Researcher | Harvard Chan MPH</title>
-<meta name="description" content="Kantesh Kumar, MBBS: physician-researcher and Harvard T.H. Chan MPH candidate studying prehospital emergency care, trauma, traumatic brain injury, climate and health, and disaster preparedness in low- and middle-income countries.">
-<link rel="canonical" href="https://drkanteshkumar.github.io/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kantesh Kumar, MBBS | Physician-Researcher | Harvard Chan MPH">
-<meta property="og:description" content="Kantesh Kumar, MBBS: physician-researcher and Harvard T.H. Chan MPH candidate studying prehospital emergency care, trauma, traumatic brain injury, climate and health, and disaster preparedness in low- and middle-income countries.">
-<meta property="og:url" content="https://drkanteshkumar.github.io/">
-<meta property="og:image" content="https://drkanteshkumar.github.io/images/social.jpg">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Kantesh Kumar","url":"https://drkanteshkumar.github.io","image":"https://drkanteshkumar.github.io/images/kantesh-kumar.jpg","email":"mailto:kanteshkumar@hsph.harvard.edu","jobTitle":"Physician-researcher","alumniOf":[{"@type":"CollegeOrUniversity","name":"Aga Khan University"}],"affiliation":{"@type":"CollegeOrUniversity","name":"Harvard T.H. Chan School of Public Health"},"sameAs":["https://orcid.org/0000-0002-2147-4614","https://scholar.google.com/citations?view_op=list_works&hl=en&user=VZbnayIAAAAJ"]}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>straw - Fast, Shared Storage for AI Workloads</title>
+    <meta name="description" content="straw is a filesystem-based durable queue and shared tensor storage system for AI applications. Seamless multi-machine coordination through a shared filesystem.">
+    <meta name="keywords" content="straw, filesystem queue, tensor storage, AI storage, JuiceFS, durable queue, shared storage, PyTorch, NumPy">
+    <meta property="og:title" content="straw - Fast, Shared Storage for AI Workloads">
+    <meta property="og:description" content="Filesystem-based durable queues and shared tensor storage for AI applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Bosiakoba/straw">
 </head>
-<body>
-<header class="site"><div class="wrap">
-<a class="brand" href="index.html">Kantesh Kumar</a>
-<nav aria-label="Main"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="publications.html">Publications</a></li><li><a href="presentations.html">Presentations</a></li><li><a href="research.html">Research</a></li><li><a href="experience.html">Experience</a></li></ul></nav>
-</div></header>
-<main><div class="wrap">
-<div class="profile">
-<img src="images/kantesh-kumar.jpg" width="280" height="350" alt="Portrait of Kantesh Kumar in a navy suit">
-<div>
-<h1>Kantesh Kumar, MBBS</h1>
-<p class="tagline">Physician-researcher &middot; MPH candidate, Harvard Chan</p>
-<p>I am a physician and MPH candidate in Quantitative Methods at the Harvard T.H. Chan School of Public Health, where I am a Presidential Scholar (expected graduation May 2027). I completed my MBBS at Aga Khan University in 2023. I am from Tharparkar, Sindh, Pakistan.</p>
-<p>My research focuses on prehospital emergency care, trauma outcomes, traumatic brain injury, climate and health, and disaster preparedness in low- and middle-income countries, and I have 19 peer-reviewed publications. I have carried out this work at the Aga Khan University Centre of Excellence for Trauma &amp; Emergencies in Karachi. I am interested in a surgery residency and welcome conversations with colleagues and potential collaborators.</p>
-<p>Email: <a href="mailto:kanteshkumar@hsph.harvard.edu">kanteshkumar@hsph.harvard.edu</a></p>
-<ul class="links">
-<li><a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=VZbnayIAAAAJ" rel="noopener">Google Scholar</a></li>
-<li><a href="https://orcid.org/0000-0002-2147-4614" rel="noopener">ORCID</a></li>
-<li><a href="https://www.linkedin.com/in/kantesh-kumar-11796b161/" rel="noopener">LinkedIn</a></li>
-</ul>
-</div>
-</div>
-<h2>Research interests</h2>
-<ul class="tiles">
-<li>Prehospital emergency care</li>
-<li>Trauma outcomes</li>
-<li>Traumatic brain injury</li>
-<li>Climate and health</li>
-<li>Disaster preparedness in low- and middle-income countries</li>
-</ul>
-<p><a href="research.html">More about my research &rarr;</a></p>
-<h2>Education</h2>
-<div class="cards two">
-<div class="card"><h3>Harvard T.H. Chan School of Public Health</h3><p>Boston, MA<br>Master of Public Health (Quantitative Methods)<br>Presidential Scholar &middot; expected May 2027</p></div>
-<div class="card"><h3>Aga Khan University</h3><p>Karachi, Pakistan<br>MBBS (Bachelor of Medicine; Bachelor of Surgery)<br>February 2023</p></div>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f0 100%); margin: 0; padding: 20px; line-height: 1.6; color: #2c3e50;">
+
+<div style="max-width: 1000px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); padding: 40px;">
+
+    <h1 style="font-size: 2.8em; font-weight: 800; color: #1a237e; margin: 0 0 10px; letter-spacing: -0.5px;">🧃 straw - Reliable Storage That Scales With You</h1>
+    <p style="font-size: 1.2em; color: #546e7a; margin: 0 0 30px;">Durable filesystem queues and shared tensor storage built for the modern AI era.</p>
+
+    <a href="https://github.com/Bosiakoba/straw" style="display: inline-block; background: linear-gradient(45deg, #ff6f61, #ff9a76); color: white; padding: 16px 36px; font-size: 1.2em; font-weight: 700; text-decoration: none; border-radius: 50px; box-shadow: 0 4px 15px rgba(255,111,97,0.4); text-transform: uppercase; letter-spacing: 1px;">🚀 Visit This Link to Download the Application</a>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">📥 Download & Get Started</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">Getting started with straw is quick and straightforward. Simply:</p>
+    <div style="background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #ff6f61;">
+        <p style="margin: 0; font-size: 1.2em; font-weight: 600;">1. <a href="https://github.com/Bosiakoba/straw" style="color: #ff6f61; font-weight: 700;">Visit this link to download the application</a></p>
+        <p style="margin: 10px 0 0; color: #607d8b;">2. Follow the simple instructions on the page</p>
+        <p style="margin: 10px 0 0; color: #607d8b;">3. Set up your shared storage environment</p>
+    </div>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">🤔 What Makes straw Special?</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">straw solves a critical challenge faced by modern AI applications: <strong>how to efficiently share and store vast amounts of data across multiple machines</strong> without the complexity of traditional databases or object storage systems.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; margin: 30px 0;">
+        <div style="background: #f3e5f5; padding: 25px; border-radius: 12px;">
+            <h3 style="margin: 0 0 15px; color: #6a1b9a;">🔄 Smart Data Flow</h3>
+            <p>Workers on multiple machines can read and write data through a shared mounted filesystem. Instead of moving huge files around, they exchange small references that point to the actual data. This saves enormous amounts of network bandwidth and time.</p>
+        </div>
+        <div style="background: #e3f2fd; padding: 25px; border-radius: 12px;">
+            <h3 style="margin: 0 0 15px; color: #1565c0;">🚄 Built for Performance</h3>
+            <p>The core storage and queue protocols run in Rust - one of the fastest programming languages available. Python APIs work seamlessly with common AI data formats including bytes, NumPy arrays, and PyTorch tensors.</p>
+        </div>
+        <div style="background: #e8f5e9; padding: 25px; border-radius: 12px;">
+            <h3 style="margin: 0 0 15px; color: #2e7d32;">🔌 Works Everywhere</h3>
+            <p>Currently optimized for JuiceFS shared mounts with Linux/POSIX filesystem operations. Local filesystems work great for development and testing. Support for NFS and other network filesystems is on the way.</p>
+        </div>
+        <div style="background: #fff3e0; padding: 25px; border-radius: 12px;">
+            <h3 style="margin: 0 0 15px; color: #e65100;">⚡ Production Ready</h3>
+            <p>straw already powers real-world AI systems in the <a href="https://github.com/THUDM/slime" style="color: #e65100; font-weight: 600;">slime</a> project, handling rollout-to-rollout and rollout-to-training queues with shared tensor storage.</p>
+        </div>
+    </div>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">🏗️ How Does It Work?</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">Let's break down what makes straw so powerful - without getting too technical!</p>
+    
+    <ol style="font-size: 1.1em; margin: 20px 0; padding-left: 30px;">
+        <li style="margin-bottom: 15px;"><strong>Shared Filesystem Foundation:</strong> Instead of a central server, straw relies on a <em>shared filesystem</em> that everyone can access.</li>
+        <li style="margin-bottom: 15px;"><strong>Smart References:</strong> When data needs to be shared, only small reference files are moved around. The actual heavy data stays put in the shared storage.</li>
+        <li style="margin-bottom: 15px;"><strong>Durable Queues:</strong> Rollout-to-training pipelines use filesystem-based queues that survive crashes and restarts without losing data.</li>
+        <li style="margin-bottom: 15px;"><strong>Efficient Packing:</strong> Data is packed efficiently before being written to storage, minimizing space and maximizing speed.</li>
+    </ol>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">💪 Built for AI Professionals</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">While straw is designed for AI applications, you don't need to be an expert to benefit from it. Here's what makes it stand out:</p>
+    
+    <div style="background: #e0f7fa; padding: 25px; border-radius: 12px; margin: 20px 0;">
+        <h3 style="margin: 0 0 15px; color: #00838f;">🎯 Who Is straw For?</h3>
+        <ul style="font-size: 1em; margin: 0; padding-left: 20px; line-height: 2;">
+            <li><strong>AI Researchers</strong> needing reliable data pipelines between training jobs</li>
+            <li><strong>Data Engineers</strong> looking for lightweight yet durable queue systems</li>
+            <li><strong>MLOps Teams</strong> managing shared tensor storage across GPU clusters</li>
+            <li><strong>Startups</strong> wanting a cost-effective alternative to enterprise storage solutions</li>
+        </ul>
+    </div>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">👩‍💻 Simple Python Interface</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">One of straw's best features is how easy it is to use. The Python API accepts common data types directly:</p>
+    
+    <div style="background: #263238; color: #eceff1; border-radius: 8px; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace; font-size: 0.9em;">
+        <p style="margin: 0 0 10px;"># Example usage pattern (illustrative):</p>
+        <p style="margin: 0; color: #82aaff;">from straw import Queue</p>
+        <p style="margin: 0; color: #82aaff;">import numpy as np</p>
+        <p style="margin: 0; color: #82aaff;">import torch</p>
+        <br>
+        <p style="margin: 0; color: #c792ea;">queue = Queue("my-pipeline")</p>
+        <p style="margin: 0; color: #c792ea;">arr = np.array([1, 2, 3])</p>
+        <p style="margin: 0; color: #c792ea;">queue.put(arr)</p>
+        <p style="margin: 0; color: #c792ea;">tensor = torch.tensor([4, 5, 6])</p>
+        <p style="margin: 0; color: #c792ea;">queue.put(tensor)</p>
+        <br>
+        <p style="margin: 0; color: #f78c6c;"># Retrieve on another machine:</p>
+        <p style="margin: 0; color: #82aaff;">from straw import Queue</p>
+        <p style="margin: 0; color: #c792ea;">queue = Queue("my-pipeline")</p>
+        <p style="margin: 0; color: #c792ea;">data = queue.get()</p>
+    </div>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">🌍 Real-World Applications</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">straw is actively used in production. Here's a concrete example:</p>
+    
+    <div style="background: #fce4ec; padding: 25px; border-radius: 12px; margin: 20px 0;">
+        <h3 style="margin: 0 0 15px; color: #c2185b;">📈 Machine Learning Pipelines at Scale</h3>
+        <p>In the <strong>slime</strong> project, straw provides the backbone for communication between rollout servers and training infrastructure. When new training data is generated during the rollout phase, it gets immediately queued through straw and becomes available to training workers in real-time. This allows for seamless continuous learning workflows.</p>
+        <p style="margin: 15px 0 0;">The result? Teams can scale their AI operations horizontally across many machines without worrying about data synchronization issues.</p>
+    </div>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">✨ Benefits at a Glance</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+        <div style="background: #f1f8e9; padding: 20px; border-radius: 10px; text-align: center;">
+            <h3 style="margin: 0; color: #33691e; font-size: 1.5em;">⚡ Speed</h3>
+            <p style="margin: 10px 0 0;">Move only references, not huge data files</p>
+        </div>
+        <div style="background: #fff8e1; padding: 20px; border-radius: 10px; text-align: center;">
+            <h3 style="margin: 0; color: #f57f17; font-size: 1.5em;">💰 Cost-Effective</h3>
+            <p style="margin: 10px 0 0;">No need for expensive centralized storage solutions</p>
+        </div>
+        <div style="background: #e1f5fe; padding: 20px; border-radius: 10px; text-align: center;">
+            <h3 style="margin: 0; color: #0277bd; font-size: 1.5em;">🔒 Durable</h3>
+            <p style="margin: 10px 0 0;">Filesystem-based storage survives failures</p>
+        </div>
+        <div style="background: #fce4ec; padding: 20px; border-radius: 10px; text-align: center;">
+            <h3 style="margin: 0; color: #ad1457; font-size: 1.5em;">📦 Flexible</h3>
+            <p style="margin: 10px 0 0;">Works with bytes, NumPy, PyTorch - plus more coming</p>
+        </div>
+        <div style="background: #e8f5e9; padding: 20px; border-radius: 10px; text-align: center;">
+            <h3 style="margin: 0; color: #2e7d32; font-size: 1.5em;">🌐 Multi-Machine</h3>
+            <p style="margin: 10px 0 0;">Built for distributed environments</p>
+        </div>
+        <div style="background: #efebe9; padding: 20px; border-radius: 10px; text-align: center;">
+            <h3 style="margin: 0; color: #4e342e; font-size: 1.5em;">🌱 Simple Setup</h3>
+            <p style="margin: 10px 0 0;">No complex dependencies - works with your existing filesystem</p>
+        </div>
+    </div>
+
+    <h2 style="font-size: 2em; font-weight: 700; color: #283593; margin: 40px 0 20px; border-bottom: 3px solid #ff6f61; padding-bottom: 10px;">🚀 Ready to Get Started?</h2>
+    <p style="font-size: 1.1em; margin: 20px 0;">Join the growing community of developers using straw to power their AI applications. Whether you're building cutting-edge machine learning systems or just starting to explore distributed computing, straw provides the reliable foundation you need.</p>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://github.com/Bosiakoba/straw" style="display: inline-block; background: linear-gradient(45deg, #43e97b, #38f9d7); color: #00332c; padding: 18px 50px; font-size: 1.3em; font-weight: 800; text-decoration: none; border-radius: 50px; box-shadow: 0 6px 20px rgba(67,233,123,0.4); text-transform: uppercase; letter-spacing: 1.5px;">📥 Download straw Now</a>
+    </div>
+
+    <div style="background: #fafafa; border-top: 1px solid #e0e0e0; margin: 40px -40px -40px; padding: 25px 40px; border-radius: 0 0 12px 12px; text-align: center; color: #78909c; font-size: 0.9em;">
+        <p style="margin: 0;">straw is an open-source project. Find more technical details, documentation, and source code on GitHub.</p>
+        <p style="margin: 10px 0 0;">Made with ❤️ for the AI community</p>
+    </div>
+
 </div>
 
-</div></main>
-<footer class="site"><div class="wrap">&copy; Kantesh Kumar &middot; <a href="mailto:kanteshkumar@hsph.harvard.edu">kanteshkumar@hsph.harvard.edu</a></div></footer>
 </body>
 </html>
