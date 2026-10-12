@@ -35,8 +35,8 @@ Tip: use **Ctrl+F** (or Cmd+F on a Mac) inside the editor to find text quickly.
 ## Change your Google Scholar, ORCID or LinkedIn link
 In `index.html`, find the line with the link name (for example `LinkedIn`) and replace the web address inside `href="..."`, keeping the quote marks.
 
-## Replace your CV
-On the repository page, open the `files` folder, click **Add file > Upload files**, and upload your new PDF named exactly `Kantesh-Kumar-CV.pdf`. It will replace the old one. Click **Commit changes**.
+## Edit your Experience page
+Open `experience.html` and click the pencil icon. Each position or school is one block that starts with `<div class="entry">`. Copy a block, paste it where you want it, and change the words. Commit the changes.
 
 ## If something looks broken
 Open the file, click **History** (top right) to see earlier versions, and use the **...** menu on the latest change to **Revert** it. Always check the live site after saving.
